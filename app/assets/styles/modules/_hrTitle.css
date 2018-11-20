@@ -1,0 +1,26 @@
+.hrTitle {
+	position: relative;
+	display: inline-block;
+	/*text-align: center;*/
+}
+
+.hrTitle::before, .hrTitle::after {
+	content: "";
+	display: block;
+	position: absolute; top: 50%; left: -60px;
+	width: 40px;
+	border-bottom: 4px solid $mainOrange;
+
+	@mixin atSmall {
+		width: 100px;
+		left: -120px;
+	}
+}
+.hrTitle::after {
+	left: auto;
+	right: -60px;
+
+	@mixin atSmall {
+		right: -120px;
+	}
+}

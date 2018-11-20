@@ -1,0 +1,13 @@
+.site-footer {
+	background-color: #DCDCDC;
+	color: $mainOrange;
+	padding: .5rem 0;
+	text-align: center;
+
+	&__text {
+		display: block;
+		margin-bottom: 1rem;
+		font-weight: 300;
+		font-size: .7rem;
+	}
+}

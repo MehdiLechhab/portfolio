@@ -1,0 +1,23 @@
+.page-section {
+	padding: 1.2rem 0;
+
+	@mixin atMedium {
+		padding: 4.5rem 0;
+	}
+
+	&--dimGrey {
+		background-color: $mainDimGrey;
+	}
+
+	&--dodgerBlue {
+		background-color: #1E90FF;
+	}
+
+	&--gainsboro {
+		background: #DCDCDC;
+	}
+
+	&--black {
+		background: #000000;
+	}
+}
