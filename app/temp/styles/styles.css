@@ -618,3 +618,52 @@ img {
 		font-weight: 300;
 		font-size: .7rem;
 	}
+
+.site-header {
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(250,91,61, .5);
+	width: 100%;
+	padding: 10px 0;
+}
+
+/*&__btn-container {
+		float: right;
+	}*/
+
+.site-header__logo {
+		position: absolute;
+		top: 0;
+		width: 8%;
+		height: auto;
+		
+
+	}
+
+.primary-nav--pull-right {
+		float: right;
+	}
+
+.primary-nav ul {
+		margin: 0;
+		padding: 0;
+		/*@mixin clearFix;*/
+
+	}
+
+.primary-nav li {
+		list-style: none;
+		float: left;
+		padding-right: 20px;
+		text-transform: uppercase;
+
+	}
+
+.primary-nav a {
+		color: #FFF;
+		font-weight: 500;
+		text-decoration: none;
+		display: block;
+		padding: 5px 0;
+		
+	}
