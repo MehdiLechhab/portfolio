@@ -13,11 +13,24 @@
 		background-color: #1E90FF;
 	}
 
+	&--olive {
+		background: #808000;
+	}
+
 	&--gainsboro {
 		background: #DCDCDC;
 	}
 
 	&--black {
 		background: #000000;
+	}
+
+	&__trigger--one {
+	}
+
+	&__trigger--second {
+	}
+
+	&__trigger--third {
 	}
 }

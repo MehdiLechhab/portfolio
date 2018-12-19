@@ -7,12 +7,24 @@
 
 	&--is-expanded {
 		background-color: rgba($mainDarkRed, .55);
+		position: fixed;
 	}
 
 	@mixin atMedium {
 		position: fixed;
 		background-color: rgba($mainOrange, .5);
 
+		&--dark {
+			background-color: rgba($mainOrange, .85);
+		}
+
+		&--dark1 {
+			background-color: rgba(255,215,0, .85);
+		}
+
+		&--dark2 {
+			background-color: rgba(240,128,128, .85);
+		}
 	}
 	/*&__btn-container {
 		float: right;
@@ -25,16 +37,25 @@
 		height: auto;
 		transform: scale(1.6);
 		transform-origin: 50% 0;
+		transition: transform .3s ease-out;
 		
+
+		@mixin atMedium {
+
+			.site-header--dark & {
+				transform: scale(.8);
+			}
+		}
 	}
 
 	&__menu-icon {
 		width: 20px;
 		height: 19px;
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 17px;
+		right: 20px;
 		z-index: 10;
+		position: fixed;
 
 		&::before {
 			content: "";
@@ -110,6 +131,7 @@
 			opacity: 1;
 			z-index: 2;
 			transform: scale(1);
+
 		}
 	}
 

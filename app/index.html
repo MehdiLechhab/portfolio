@@ -26,11 +26,11 @@
 			<div class="site-header__menu-content">
 				<nav class="primary-nav primary-nav--pull-right">
 				<ul>
-					<li><a href="#about">About</a></li>
-					<li><a href="#Portfolio">Portfolio</a></li>
+					<li><a href="#about" id="about-link">About</a></li>
+					<li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
 					
-					<li><a href="#skills">Skills</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#skills" id="skills-link">Skills</a></li>
+					<li><a href="#contact" id="contact-link">Contact</a></li>
 				</ul>
 			</nav>
 			</div>
@@ -55,7 +55,7 @@
 		</div>	 
 	</div>
 
-	<div class="page-section page-section--dimGrey">
+	<div id="about" class="page-section page-section--dimGrey page-section__trigger--first" data-matching-link="#about-link">
 		<div class="wrapper wrapper--center">
 			<h3 class="headline headline--centered hrTitle"><strong>ABOUT MEHDI</strong></h3>
 			<p class="headline headline--centered headline--small headline--narrow headline--tmargin">Living in New York, I discovered my love for Web Developing which began 2 years ago. Since then I've acquired some decent experience on my free time.</p>
@@ -69,7 +69,7 @@
 		</div>
 	</div>	
 
-	<div class="page-section page-section--dodgerBlue">
+	<div id="portfolio" class="page-section page-section--dodgerBlue page-section__trigger--second" data-matching-link="#portfolio-link">
 		<div class="wrapper wrapper--center">
 			<h3 class="headline headline--centered hrTitle">PORTFOLIO</h3>
 			
@@ -85,6 +85,14 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="skills" class="page-section page-section--olive" data-matching-link="#skills-link">
+		<div class="wrapper wrapper--center">
+			<h3 class="headline headline--centered hrTitle"><STRONG>SKILLS / KNOWLEDGE</STRONG></h3>
+			<h2 class="headline headline--small headline--tmargin">Skills listed below are a junior rank.</h2>
+		</div>
+	</div>
+
 	<!-- I was thinking an animation of pixel char holding a thanks sign -->
 	<!-- Here I can say "Stole your heart?" -->
 
@@ -92,12 +100,13 @@
 
 	<!-- with social icon links below the button -->
 
-	<div class="page-section page-section--gainsboro">
+	<div id="contact" class="page-section page-section--gainsboro" data-matching-link="#contact-link">
 		<div class="wrapper wrapper--center">
 			<h3 class="headline headline--centered hrTitle"><STRONG>YOU ROCK!</STRONG></h3>
 			<h2 class="headline headline--small headline--tmargin">You want to chat? Sweet!</h2>
 
 			<p><a href="#" class="btn btn--darkRed btn--large btn--border">CONTACT ME</a></p>
+			<!-- under here the icon assets interactable -->
 		</div>
 	</div>
 

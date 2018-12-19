@@ -1,7 +1,11 @@
+/*Used code below to fix a problem with having a white area to the right show up*/
+html,body {
+    overflow-x: hidden; 
+}
+
 .large-hero {
 	border-bottom: 10px solid $mainOrange;
 	position: relative;
-
 	&__text-content {
 	position: absolute;
 	top: 50%;
