@@ -8,4 +8,12 @@
 	&--center {
 		text-align: center;
 	}
+
+	&--narrow {
+		max-width: 470px;
+	}
+
+	&--less {
+		margin-top: 10rem;
+	}
 }

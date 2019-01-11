@@ -30,7 +30,7 @@
 					<li><a href="#portfolio" id="portfolio-link">Portfolio</a></li>
 					
 					<li><a href="#skills" id="skills-link">Skills</a></li>
-					<li><a href="#contact" id="contact-link">Contact</a></li>
+					<li><a href="#" class="toggle-modal">Contact</a></li>
 				</ul>
 			</nav>
 			</div>
@@ -40,7 +40,9 @@
 	</header>
 
 	<div class="large-hero">
-		<img src="assets/images/computer+coffee.jpg" class="large-hero__image">
+		
+		<img src="assets/images/computer+coffee1.jpg" alt="Computer, Coffee by window."class="large-hero__image">
+
 		<div class="large-hero__text-content">
 			<div class="wrapper">
 				<h1 class="large-hero__title"><!-- Hello there! --><strong>JUNIOR FRONT END</strong></h1>
@@ -49,7 +51,7 @@
 				<!-- My name is Mehdi. I am a Jr Front End Developer living in New York City, NY. --></h1>
 				<hr class="separator">
 				
-				<p><a href="#" class="btn btn--darkRed btn--large btn--border">CONTACT ME</a></p>
+				<p><a href="#" class="btn btn--darkRed btn--large btn--border toggle-modal">CONTACT ME</a></p>
 
 			</div>
 		</div>	 
@@ -58,7 +60,7 @@
 	<div id="about" class="page-section page-section--dimGrey page-section__trigger--first" data-matching-link="#about-link">
 		<div class="wrapper wrapper--center">
 			<h3 class="headline headline--centered hrTitle"><strong>ABOUT MEHDI</strong></h3>
-			<p class="headline headline--centered headline--small headline--narrow headline--tmargin">Living in New York, I discovered my love for Web Developing which began 2 years ago. Since then I've acquired some decent experience on my free time.</p>
+			<p class="headline headline--centered headline--small headline--narrow headline--tmargin">Living in New York, I discovered my love for Web Developing which began more than 1 year ago. Since then I've acquired some decent experience on my free time by using free online resources.</p>
 
 			<p class="headline headline--centered headline--small headline--narrow headline--narrow__small">What will I learn next? Whom will I meet? These are questions that excite me and keep me going!</p>
 
@@ -88,8 +90,8 @@
 
 	<div id="skills" class="page-section page-section--olive" data-matching-link="#skills-link">
 		<div class="wrapper wrapper--center">
-			<h3 class="headline headline--centered hrTitle"><STRONG>SKILLS / KNOWLEDGE</STRONG></h3>
-			<h2 class="headline headline--small headline--tmargin">Skills listed below are a junior rank.</h2>
+			<h3 class="headline headline--centered hrTitle"><STRONG>TOOLS I USE</STRONG></h3>
+			<h2 class="headline headline--small headline--tmargin">Github, Sublime, Node.js, Boostrap.. (these will be icons.. dont forget to change when possible.)</h2>
 		</div>
 	</div>
 
@@ -105,7 +107,7 @@
 			<h3 class="headline headline--centered hrTitle"><STRONG>YOU ROCK!</STRONG></h3>
 			<h2 class="headline headline--small headline--tmargin">You want to chat? Sweet!</h2>
 
-			<p><a href="#" class="btn btn--darkRed btn--large btn--border">CONTACT ME</a></p>
+			<p><a href="#" class="btn btn--darkRed btn--large btn--border toggle-modal">CONTACT ME</a></p>
 			<!-- under here the icon assets interactable -->
 		</div>
 	</div>
@@ -113,9 +115,38 @@
 	<!-- Footer here -->
 <footer class="site-footer">
     <div class="wrapper headline--footer-margin">
-      <p><span class="site-footer__text">Made in NYC &copy; <a href="https://github.com/MehdiLechhab">Mehdi Lechhab</a></span></p>
+      <p><span class="site-footer__text">Made with love in NYC &copy; <a href="https://github.com/MehdiLechhab" target="_blank">Mehdi Lechhab</a></span></p>
     </div>
 </footer>
+
+<div class="modal">
+	
+	<div class="modal__inner">
+		<img class="modal__img" src="/assets/images/portfolioPic.jpg">
+		<h1 class="modal__title">CONTACT ME</h1>
+
+		<div class="wrapper wrapper--narrow">
+			
+			<p class="modal__description">I am honored you want to chat with me. <!-- Click below to send me your message. --> I will get back to you as soon as possible!</p>
+
+			
+			<h3 class="modal__icon--title">Contact Mehdi?</h3>
+			
+			<div class="social-icons">
+
+				<a href="https://github.com/MehdiLechhab" target="_blank" class="social-icons__icon"><img src="assets/images/icons/GitHub-Mark-64px.png" class="icon"></a>
+
+				<a href="mailto:m..lloyal93@gmail.com" class="social-icons__icon"><img src="assets/images/icons/mail-64px.png" class="icon"></a>
+
+				<a href="https://www.instagram.com/mehdi_lechhab/"
+				target="_blank" class="social-icons__icon"><img src="assets/images/icons/instagram-64px.png" class="icon"></a>
+			</div>
+			
+		</div>
+	</div>
+	<div class="modal__close toggle-modal">X</div>
+</div>
+
 <script src="/temp/scripts/App.js"></script>
 </body>
 </html>

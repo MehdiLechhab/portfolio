@@ -2,6 +2,8 @@ import MobileMenu from './modules/MobileMenu';
 import RevealOnScroll from './modules/RevealOnScroll';
 import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
+import Modal from './modules/Modal';
+
 
 var mobileMenu = new MobileMenu();
 // toggle reveals of elements below
@@ -14,5 +16,5 @@ new StickyHeader($(".large-hero__title"), "site-header--dark");
 new StickyHeader($(".page-section__trigger--first"), "site-header--dark1");
 new StickyHeader($(".page-section__trigger--second"), "site-header--dark2");
 var stickyHeader = new StickyHeader();
-
-// 3 errors atm for fav icon
+// modal
+var modal = new Modal();

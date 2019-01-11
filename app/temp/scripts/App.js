@@ -11109,6 +11109,10 @@ var _StickyHeader = __webpack_require__(5);
 
 var _StickyHeader2 = _interopRequireDefault(_StickyHeader);
 
+var _Modal = __webpack_require__(7);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
@@ -11121,8 +11125,8 @@ new _StickyHeader2.default((0, _jquery2.default)(".large-hero__title"), "site-he
 new _StickyHeader2.default((0, _jquery2.default)(".page-section__trigger--first"), "site-header--dark1");
 new _StickyHeader2.default((0, _jquery2.default)(".page-section__trigger--second"), "site-header--dark2");
 var stickyHeader = new _StickyHeader2.default();
-
-// 3 errors atm for fav icon
+// modal
+var modal = new _Modal2.default();
 
 /***/ }),
 /* 3 */
@@ -11700,6 +11704,47 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 }));
 
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// turns out just using this code below saved me from going crazy
+(0, _jquery2.default)(".toggle-modal").click(function () {
+  (0, _jquery2.default)(".modal").toggleClass("modal--is-visible");
+});
+
+// class Modal {
+// 	constructor() {
+// 		this.toggleModalButton = $(".toggle-modal");
+// 		this.modal = $(".modal");
+// 		this.events();
+// 	}
+
+// 	events() {
+// 		//toggles the modal 
+// 		this.toggleModalButton.click(this.toggleModal.bind(this));
+
+// 	}
+
+// 	toggleModal() {
+// 		// adds the class below to .modal if the class .toggle-modal is clicked on
+// 		this.modal.toggle("modal--is-visible");
+
+// 	}
+// }
+
+
+// export default Modal;
 
 /***/ })
 /******/ ]);
