@@ -11,6 +11,8 @@
 
 </head>
 <body>
+	
+	
 	<header class="site-header">
 		<div class="wrapper">
 			<div class="site-header__logo">
@@ -45,6 +47,7 @@
 
 		<div class="large-hero__text-content">
 			<div class="wrapper">
+				
 				<h1 class="large-hero__title"><!-- Hello there! --><strong>JUNIOR FRONT END</strong></h1>
 				<h1 class="large-hero__subtitle">
 					<strong>DEVELOPER</strong>
@@ -81,17 +84,64 @@
 
 			<hr class="separator">
 			<!-- divs below will be for a column of the projects -->
-			<div class="row">
-				<div></div>
-				<div></div>
+			<!-- START -->
+			<!-- row__grid class is in rowGallery file -->
+			<div class="row__grid">
+			  <div class="row__column--grid">
+			    <div class="row__content--grid">
+			      <a href="https://mehdilechhab.github.io/travel-site/" target="_blank"><img src="assets/images/airplane600px.jpg" alt="Mountains" style="width:100%" class="image__shake"></a>
+			      <h3><a href="https://mehdilechhab.github.io/travel-site/" target="_blank">Travel Site</a></h3>
+			      <p></p>
+			    </div>
+			  </div>
+			  <div class="row__column--grid">
+			    <div class="row__content--grid">
+			      <img src="assets/images/icons/300px-WIPLogo.png" alt="Lights" style="width:100%">
+			      <h3>My Work</h3>
+			      <p>Just a filler for my future projects.</p>
+			    </div>
+			  </div>
+			
+			  <div class="row__column--grid">
+			    <div class="row__content--grid">
+			      <img src="assets/images/icons/300px-WIPLogo.png" alt="Mountains" style="width:100%">
+			      <h3>My Work</h3>
+			      <p>Just a filler for my future projects.</p>
+			    </div>
+			  </div>
+			  <div class="row__column--grid">
+			    <div class="row__content--grid">
+			      <img src="assets/images/icons/300px-WIPLogo.png" alt="Lights" style="width:100%">
+			      <h3>My Work</h3>
+			      <p>Just a filler for my future projects.</p>
+			    </div>
+			  </div>
 			</div>
+			<!-- END -->
 		</div>
 	</div>
 
 	<div id="skills" class="page-section page-section--olive" data-matching-link="#skills-link">
 		<div class="wrapper wrapper--center">
 			<h3 class="headline headline--centered hrTitle"><STRONG>TOOLS I USE</STRONG></h3>
-			<h2 class="headline headline--small headline--tmargin">Github, Sublime, Node.js, Boostrap.. (these will be icons.. dont forget to change when possible.)</h2>
+			<!-- <h2 class="headline headline--small headline--tmargin">Github, Sublime, Node.js, Boostrap.. (these will be icons.. dont forget to change when possible.)</h2> -->
+
+			<!-- START -->
+			<div class=" wrapper--row">
+				<div class="wrapper--column">
+					<img src="assets/images/icons/github-512.png" class="wrapper--column-rounded">
+				</div>
+				<div class="wrapper--column">
+					<img src="assets/images/icons/node-js-512.png">
+				</div>
+				<div class="wrapper--column">
+					<img src="assets/images/icons/sublime.png" class="wrapper--column-rounded">
+				</div>
+			</div>
+			
+
+
+			<!-- END -->
 		</div>
 	</div>
 
@@ -122,7 +172,9 @@
 <div class="modal">
 	
 	<div class="modal__inner">
-		<img class="modal__img" src="/assets/images/portfolioPic.jpg">
+		
+	<img class="modal__img" src="/assets/images/portfolioPic.jpg">
+			
 		<h1 class="modal__title">CONTACT ME</h1>
 
 		<div class="wrapper wrapper--narrow">

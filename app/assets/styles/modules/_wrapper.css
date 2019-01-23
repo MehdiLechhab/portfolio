@@ -16,4 +16,21 @@
 	&--less {
 		margin-top: 10rem;
 	}
+
+	&--column {
+		float: left;
+		width: 32.33%;
+		padding: .08rem;
+
+		&-rounded {
+			border-radius: 50%;
+		}
+	}
+}
+
+.wrapper--row::after {
+	content: "";
+	clear: both;
+	display: table;
+
 }
