@@ -11118,12 +11118,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var mobileMenu = new _MobileMenu2.default();
 // toggle reveals of elements below
 new _RevealOnScroll2.default((0, _jquery2.default)(".large-hero__text-content"), "11rem");
-new _RevealOnScroll2.default((0, _jquery2.default)(".site-header__logo"), "-670px");
+// makes logo disappear at 670px..
+// new RevealOnScroll($(".site-header__logo"), "-670px");
+
 
 // header color change below
 new _StickyHeader2.default((0, _jquery2.default)(".large-hero__title"), "site-header--dark");
 new _StickyHeader2.default((0, _jquery2.default)(".page-section__trigger--first"), "site-header--dark1");
 new _StickyHeader2.default((0, _jquery2.default)(".page-section__trigger--second"), "site-header--dark2");
+new _StickyHeader2.default((0, _jquery2.default)(".page-section__trigger--third"), "site-header--dark3");
 var stickyHeader = new _StickyHeader2.default();
 // modal
 var modal = new _Modal2.default();

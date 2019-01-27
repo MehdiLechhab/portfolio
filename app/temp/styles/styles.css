@@ -797,6 +797,10 @@ html,body {
 		.site-header--dark2 {
 			background-color: rgba(240,128,128, .85);
 		}
+
+		.site-header--dark3 {
+			background-color: rgba(2,10,100, .85);
+		}
 	}
 
 /*&__btn-container {
@@ -840,7 +844,7 @@ html,body {
 			content: "";
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -5px;
 			width: 20px;
 			height: 3px;
 			background-color: #FA5B3D;
@@ -855,7 +859,7 @@ html,body {
 .site-header__menu-icon__middle {
 			position: absolute;
 			top: 8px;
-			left: 0;
+			left: -5px;
 			width: 20px;
 			height: 3px;
 			background-color: #8b0000;
@@ -867,7 +871,7 @@ html,body {
 			content: "";
 			position: absolute;
 			bottom: 0;
-			left: 0;
+			left: -5px;
 			width: 20px;
 			height: 3px;
 			background-color: #FA5B3D;
@@ -1025,6 +1029,8 @@ html,body {
 	        transform: scale(1.2);
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
+
+
 }
 
 .modal--is-visible {
@@ -1062,8 +1068,8 @@ html,body {
 
 .modal__close {
 		position: absolute;
-		top: 15px;
-		right: 15px;
+		top: 25px;
+		right: 25px;
 		font-size: 2rem;
 		-webkit-transform: scaleX(1.2);
 		        transform: scaleX(1.2);
@@ -1136,9 +1142,13 @@ html,body {
 /* Content */
 
 .row__content--grid {
-  background-color: #1873cc;
+  background-color: #033d75;
   padding: 10px;
 }
+
+.row__content--grid h3 a:visited {
+    color: inherit;
+  }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
@@ -1164,7 +1174,9 @@ html,body {
 
   /* When the animation is finished, start again */
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; 
+          animation-iteration-count: infinite;
+  border-radius: 15%;
+  opacity: 0.8;
   }
 
 @-webkit-keyframes shake {

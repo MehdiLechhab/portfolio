@@ -23,8 +23,12 @@
 
 /* Content */
 .row__content--grid {
-  background-color: #1873cc;
+  background-color: #033d75;
   padding: 10px;
+
+  & h3 a:visited {
+    color: inherit;
+  }
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
