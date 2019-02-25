@@ -1,0 +1,74 @@
+.container {
+	width: 250px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, .1);
+	font-family: 'Righteous', cursive;
+
+	@mixin atSmall {
+		width: 600px;
+		margin: 100px auto;
+	}
+
+	@mixin atMedium {
+		width: 450px;
+		margin: 100px auto;
+	}
+
+	&__title {
+		background: $mainOrange;
+		color: white;
+		margin: 0;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		font-size: 1.15em;
+		font-weight: normal;
+
+		@mixin atSmall {
+			font-size: 1.5em;
+		}
+	}
+
+
+	&__style--none {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-family: 'Righteous', cursive;
+	}
+
+	&__tools {
+		background: #fff;
+		height: 40px;
+		line-height: 40px;
+		color: #666;
+		text-align: left;
+	}
+	&__tools:nth-child(2n) {
+		background: #f7f7f7;
+	}
+
+	&__icon {
+		background: $mainOrange;
+		height: 40px;
+		margin-right: 20px;
+		text-align: center;
+		color: white;
+		width: 0px;
+		display: inline-block;
+		transition: 0.15s linear;
+		opacity: 0;
+		
+
+	}
+
+	&__tools:hover .container__icon {
+		width: 40px;
+		opacity: 1;
+	}
+
+}
+
+.fa-plus {
+	float: right;
+}

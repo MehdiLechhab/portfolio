@@ -3,7 +3,8 @@ import RevealOnScroll from './modules/RevealOnScroll';
 import $ from 'jquery';
 import StickyHeader from './modules/StickyHeader';
 import Modal from './modules/Modal';
-
+import Todolist from './modules/Todolist';
+import ReturnToTop from './modules/ReturnToTop';
 
 var mobileMenu = new MobileMenu();
 // toggle reveals of elements below
@@ -20,3 +21,7 @@ new StickyHeader($(".page-section__trigger--third"), "site-header--dark3");
 var stickyHeader = new StickyHeader();
 // modal
 var modal = new Modal();
+// todos list
+var todolist = new Todolist();
+//returnToTop
+var returnToTop = new ReturnToTop();

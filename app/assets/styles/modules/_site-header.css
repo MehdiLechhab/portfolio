@@ -140,3 +140,21 @@
 	}
 
 }
+
+#about-link:hover {
+	color: yellow;
+	line-height: 2;
+	transition: .4s ease-in-out;
+}
+
+#portfolio-link:hover {
+	color: yellow;
+	line-height: 2;
+	transition: .4s ease-in-out;
+}
+
+#skills-link:hover {
+	color: yellow;
+	line-height: 2;
+	transition: .4s ease-in;
+}

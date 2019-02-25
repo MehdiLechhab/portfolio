@@ -58,12 +58,13 @@
 	}
 
 	&__img {
-		width: 130px;
+		/*width: 130px;*/
 		height: 155px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 20%;
+		margin-top: 60px;
 	}
 
 

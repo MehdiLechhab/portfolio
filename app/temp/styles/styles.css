@@ -539,7 +539,7 @@ html,body {
 	}
 
 .btn {
-	/*background-color: $mainOrange;*/
+	background-color: rgba(250,91,61, 0.18);
 	background-image: none;
 	color: #FFF;
 	text-decoration: none;
@@ -561,9 +561,213 @@ html,body {
 	}
 
 .btn--border {
-		border: 1px solid #FA5B3D;
+		/*border: 1px solid $mainOrange;*/
 	
 	}
+
+.btn:hover {
+	background-color: rgba(250,91,61, 0.8);
+}
+
+/*animation starts here*/
+
+.btn--anim {
+	position: -webkit-sticky;
+	position: sticky;
+	/*top: 50%;
+	left: 50%;*/
+	/*transform: translate(-50%, -50%);*/
+	/*color: #1670f0;*/
+	/*padding: 30px 60px;*/
+	/*font-size: 30px;
+	letter-spacing: 2px;*/
+	/*text-transform: uppercase;*/
+	/*text-decoration: none;*/
+	/*box-shadow: 0 20px 50px rgba(0,0,0, .5);*/
+	overflow: hidden;
+}
+
+/*.btn-anim:before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	width: 50%;
+	background: rgba(255, 255, 255, .05);
+}*/
+
+.btn--anim span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: -webkit-gradient(linear, left top, right top, from(#FFD700), to(#FF4500));
+	background: linear-gradient(to right, #FFD700, #FF4500);
+	-webkit-animation: animate1 2s linear infinite;
+	        animation: animate1 2s linear infinite;
+}
+
+.btn--anim:hover span:nth-child(1) {
+	background: -webkit-gradient(linear, left top, right top, from(#00FFFF), to(#00008B));
+	background: linear-gradient(to right, #00FFFF, #00008B);
+	-webkit-animation: animate1 1s linear infinite;
+	        animation: animate1 1s linear infinite;
+}
+
+@-webkit-keyframes animate1 {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+@keyframes animate1 {
+	0% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+	100% {
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+}
+
+.btn--anim span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(#FFD700), to(#FF4500));
+	background: linear-gradient(to bottom, #FFD700, #FF4500);
+	-webkit-animation: animate2 2s linear infinite;
+	        animation: animate2 2s linear infinite;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+}
+
+.btn--anim:hover span:nth-child(2) {
+	background: -webkit-gradient(linear, left top, left bottom, from(#00FFFF), to(#00008B));
+	background: linear-gradient(to bottom, #00FFFF, #00008B);
+	-webkit-animation: animate2 1s linear infinite;
+	        animation: animate2 1s linear infinite;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+}
+
+@-webkit-keyframes animate2 {
+	0% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
+	}
+}
+
+@keyframes animate2 {
+	0% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+	100% {
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
+	}
+}
+
+.btn--anim span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: -webkit-gradient(linear, right top, left top, from(#FFD700), to(#FF4500));
+	background: linear-gradient(to left, #FFD700, #FF4500);
+	-webkit-animation: animate3 2s linear infinite;
+	        animation: animate3 2s linear infinite;
+}
+
+.btn--anim:hover span:nth-child(3) {
+	background: -webkit-gradient(linear, right top, left top, from(#00FFFF), to(#00008B));
+	background: linear-gradient(to left, #00FFFF, #00008B);
+	-webkit-animation: animate3 1s linear infinite;
+	        animation: animate3 1s linear infinite;
+}
+
+@-webkit-keyframes animate3 {
+	0% {
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+}
+
+@keyframes animate3 {
+	0% {
+		-webkit-transform: translateX(100%);
+		        transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(-100%);
+		        transform: translateX(-100%);
+	}
+}
+
+.btn--anim span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: -webkit-gradient(linear, left bottom, left top, from(#FFD700), to(#FF4500));
+	background: linear-gradient(to top, #FFD700, #FF4500);
+	-webkit-animation: animate4 2s linear infinite;
+	        animation: animate4 2s linear infinite;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+}
+
+.btn--anim:hover span:nth-child(4) {
+	background: -webkit-gradient(linear, left bottom, left top, from(#00FFFF), to(#00008B));
+	background: linear-gradient(to top, #00FFFF, #00008B);
+	-webkit-animation: animate4 1s linear infinite;
+	        animation: animate4 1s linear infinite;
+	-webkit-animation-delay: .5s;
+	        animation-delay: .5s;
+}
+
+@-webkit-keyframes animate4 {
+	0% {
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
+	}
+	100% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+}
+
+@keyframes animate4 {
+	0% {
+		-webkit-transform: translateY(100%);
+		        transform: translateY(100%);
+	}
+	100% {
+		-webkit-transform: translateY(-100%);
+		        transform: translateY(-100%);
+	}
+}
 
 .wrapper {
 	padding-left: 18px;
@@ -595,6 +799,10 @@ html,body {
 			border-radius: 50%;
 		}
 
+.wrapper--no-margin {
+		
+	}
+
 .wrapper--row::after {
 	content: "";
 	clear: both;
@@ -621,9 +829,12 @@ html,body {
 		background-color: #093e73;
 	}
 
-.page-section--olive {
-		background: #808000;
-	}
+.page-section--gradient {
+		background: #8A2387;  /* fallback for old browsers */  /* Chrome 10-25, Safari 5.1-6 */
+		background: -webkit-gradient(linear, left top, right top, from(#F27121), color-stop(#E94057), to(#8A2387));
+		background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		}
 
 .page-section--gainsboro {
 		background: #DCDCDC;
@@ -937,6 +1148,27 @@ html,body {
 
 		}
 
+#about-link:hover {
+	color: yellow;
+	line-height: 2;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#portfolio-link:hover {
+	color: yellow;
+	line-height: 2;
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#skills-link:hover {
+	color: yellow;
+	line-height: 2;
+	-webkit-transition: .4s ease-in;
+	transition: .4s ease-in;
+}
+
 @media (min-width: 800px) {
 
 .primary-nav--pull-right {
@@ -999,7 +1231,7 @@ html,body {
 	}
 
 			.primary-nav a.is-current-link {
-				color: #8b0000;
+				color: yellow;
 			}
 	}
 
@@ -1083,12 +1315,13 @@ html,body {
 		}
 
 .modal__img {
-		width: 130px;
+		/*width: 130px;*/
 		height: 155px;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		border-radius: 20%;
+		margin-top: 60px;
 	}
 
 .social-icons {
@@ -1114,21 +1347,22 @@ html,body {
 		}
 
 .row__grid {
-  margin: 8px -16px;
+  /*margin: 8px -16px;*/
 }
 
 /* Add padding BETWEEN each column (if you want) */
 
 .row__grid,
 .row__grid > .row__column--grid {
-  padding: 8px;
+ /* padding: 8px;*/
 }
 
 /* Create four equal columns that floats next to each other */
 
 .row__column--grid {
-  float: left;
-  width: 23%;
+  /*float: left;
+  width: 30%;
+  margin: 1.66%;*/
 }
 
 /* Clear floats after rows */
@@ -1142,30 +1376,14 @@ html,body {
 /* Content */
 
 .row__content--grid {
-  background-color: #033d75;
-  padding: 10px;
+  margin: 1.66%;
+  width: 30%;
+  float: left;
 }
 
 .row__content--grid h3 a:visited {
     color: inherit;
   }
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-
-@media screen and (max-width: 900px) {
-  .row__column--grid {
-    float: left;
-    width: 48%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-@media screen and (max-width: 600px) {
-  .row__column--grid {
-    width: 95.5%;
-  }
-}
 
 .image__shake:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
@@ -1212,4 +1430,184 @@ html,body {
 	position: sticky;
 	top: 0;
 	z-index: 12;
+}
+
+.container {
+	width: 250px;
+	margin: 100px auto;
+	background: #f7f7f7;
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0, .1);
+	        box-shadow: 0 0 3px rgba(0,0,0, .1);
+	font-family: 'Righteous', cursive;
+
+}
+
+@media (min-width: 530px) {
+
+.container {
+		width: 600px;
+		margin: 100px auto
+
+}
+	}
+
+@media (min-width: 800px) {
+
+.container {
+		width: 450px;
+		margin: 100px auto
+
+}
+	}
+
+.container__title {
+		background: #FA5B3D;
+		color: white;
+		margin: 0;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		font-size: 1.15em;
+		font-weight: normal;
+	}
+
+@media (min-width: 530px) {
+
+.container__title {
+			font-size: 1.5em
+	}
+	}
+
+.container__style--none {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		font-family: 'Righteous', cursive;
+	}
+
+.container__tools {
+		background: #fff;
+		height: 40px;
+		line-height: 40px;
+		color: #666;
+		text-align: left;
+	}
+
+.container__tools:nth-child(2n) {
+		background: #f7f7f7;
+	}
+
+.container__icon {
+		background: #FA5B3D;
+		height: 40px;
+		margin-right: 20px;
+		text-align: center;
+		color: white;
+		width: 0px;
+		display: inline-block;
+		-webkit-transition: 0.15s linear;
+		transition: 0.15s linear;
+		opacity: 0;
+		
+
+	}
+
+.container__tools:hover .container__icon {
+		width: 40px;
+		opacity: 1;
+	}
+
+.fa-plus {
+	float: right;
+}
+
+.animation__squiggly-line {
+	/*border-bottom: 5px solid rgba(240,230,140, .8);
+  	color: black;
+  	padding-bottom: .25em;
+  	text-decoration: none;
+  	padding-left: 22px;
+  	margin-right: 4px;*/
+
+}
+
+.animation__squiggly-line:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 10%;
+ /* border-bottom: 0;*/
+ /* padding-bottom: .3em;*/
+  text-decoration: none;
+}
+
+#about-link:hover span {
+	color: orange;
+}
+
+.banner {
+	position: fixed;
+	bottom: 40px;
+	left: 10px;
+	max-height: 100%;
+	width: 100px;
+	opacity: 0;
+	-webkit-transition: 0.4s ease-in;
+	transition: 0.4s ease-in;
+	visibility: hidden;
+}
+
+@media (min-width: 530px) {
+
+.banner {
+		position: fixed;
+		bottom: 80px;
+		left: 300px;
+		max-height: 100%;
+		width: 200px;
+		opacity: 0;
+		-webkit-transition: 0.4s ease-in;
+		transition: 0.4s ease-in
+}
+	}
+
+.banner--trigger:hover .banner {
+	opacity: 1;
+	-webkit-transition: 0.4s ease-in;
+	transition: 0.4s ease-in;
+	visibility: visible;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+   
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+   opacity: .6;
+}
+
+#return-to-top:hover i {
+    top: 5px;
 }
