@@ -142,19 +142,26 @@
 }
 
 #about-link:hover {
-	color: yellow;
-	line-height: 2;
-	transition: .4s ease-in-out;
+	color: black;
+	transition: .3s ease-in;
+	text-decoration: underline;
+
 }
 
 #portfolio-link:hover {
-	color: yellow;
-	line-height: 2;
-	transition: .4s ease-in-out;
+	color: black;
+	transition: .3s ease-in;
+	text-decoration: underline;
 }
 
 #skills-link:hover {
-	color: yellow;
-	line-height: 2;
-	transition: .4s ease-in;
+	color: black;
+	transition: .3s ease-in;
+	text-decoration: underline;
+}
+
+#contact-link:hover {
+	color: black;
+	transition: .3s ease-in;
+	text-decoration: underline;
 }
