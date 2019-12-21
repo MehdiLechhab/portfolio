@@ -1266,6 +1266,7 @@ html,body {
 
 			.primary-nav a.is-current-link {
 				color: black;
+				text-decoration: underline;
 			}
 	}
 
