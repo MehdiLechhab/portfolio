@@ -55,12 +55,14 @@
 	border-bottom: 2px solid $mainOrange;
 }
 
-@mixin atSmall {
-	color: white;
-	font-size: .8em;
-	}
+
 
 #headline__content {
 	color: white;
 	font-size: .6em;
+
+	@mixin atSmall {
+	color: white;
+	font-size: .8em;
+	}
 }

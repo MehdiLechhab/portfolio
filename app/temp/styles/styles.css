@@ -923,15 +923,18 @@ html,body {
 	border-bottom: 2px solid #FA5B3D;
 }
 
-@media (min-width: 530px) {
-	color: white;
-	font-size: .8em;
-	}
-
 #headline__content {
 	color: white;
 	font-size: .6em;
 }
+
+@media (min-width: 530px) {
+
+#headline__content {
+	color: white;
+	font-size: .8em
+}
+	}
 
 .hrTitle {
 	position: relative;
