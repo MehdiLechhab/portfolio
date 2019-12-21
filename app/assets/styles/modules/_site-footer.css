@@ -11,3 +11,12 @@
 		font-size: .7rem;
 	}
 }
+
+.site-footer__text a {
+	color: white;
+	text-decoration: none;
+}
+
+.site-footer__text a:hover {
+	border-bottom: 2px solid $mainOrange;
+}

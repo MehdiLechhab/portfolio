@@ -1,0 +1,7 @@
+.image__style {
+  border: 2px solid $mainOrange;
+  transition: transform .2s ease-in;
+}
+.image__style:hover {
+  transform: scale(1.04);
+}
