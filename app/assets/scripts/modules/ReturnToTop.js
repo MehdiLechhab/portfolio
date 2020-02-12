@@ -8,7 +8,8 @@ $(window).scroll(function() {
         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
     }
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
+$('#return-to-top').click(function(e) {      // When arrow is clicked
+	e.preventDefault()
     $('body,html').animate({
         scrollTop : 0                       // Scroll to top of body
     }, 500);

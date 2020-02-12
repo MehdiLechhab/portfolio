@@ -11800,8 +11800,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
         (0, _jquery2.default)('#return-to-top').fadeOut(200); // Else fade out the arrow
     }
 });
-(0, _jquery2.default)('#return-to-top').click(function () {
+(0, _jquery2.default)('#return-to-top').click(function (e) {
     // When arrow is clicked
+    e.preventDefault();
     (0, _jquery2.default)('body,html').animate({
         scrollTop: 0 // Scroll to top of body
     }, 500);
